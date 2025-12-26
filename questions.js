@@ -2,65 +2,66 @@
    ====================  LISTE DES QUESTIONS  ==================
    ============================================================ */
 
-const questions = [ {
-    question: "On lance un dé à 6 faces équilibré. Quelle est la probabilité d’obtenir le nombre 3 ?",
-    options: ["1/6", "1/3", "1/2", "3/6"],
-    bonne_reponse: "1/6",
-    explication: "Il y a 6 issues possibles et une seule favorable (le 3), donc la probabilité est 1/6."
+const questions = [
+  {
+    question: "Développer l’expression (x + 2)(x + 3).",
+    options: ["x² + 5x + 6", "x² + 6x + 5", "x² + 5x + 1", "x² + 6x + 1"],
+    bonne_reponse: "x² + 5x + 6",
+    explication: "(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6."
   },
   {
-    question: "On tire une carte au hasard parmi 10 cartes numérotées de 1 à 10. Quelle est la probabilité de tirer un nombre pair ?",
-    options: ["1/10", "3/10", "5/10", "7/10"],
-    bonne_reponse: "5/10",
-    explication: "Les nombres pairs sont 2, 4, 6, 8 et 10, soit 5 issues favorables sur 10."
+    question: "Développer l’expression (x - 4)(x + 1).",
+    options: ["x² - 3x - 4", "x² - 4x + 1", "x² - 3x + 4", "x² + 5x - 4"],
+    bonne_reponse: "x² - 3x - 4",
+    explication: "(x - 4)(x + 1) = x² + x - 4x - 4 = x² - 3x - 4."
   },
   {
-    question: "Dans un sac, il y a 4 billes rouges et 6 billes bleues. Quelle est la probabilité de tirer une bille rouge ?",
-    options: ["4/10", "6/10", "1/4", "1/6"],
-    bonne_reponse: "4/10",
-    explication: "Il y a 4 billes rouges sur un total de 10 billes."
+    question: "Quel est le développement de (x - 2)(x - 5) ?",
+    options: ["x² - 7x + 10", "x² - 10x + 7", "x² + 7x - 10", "x² - 7x - 10"],
+    bonne_reponse: "x² - 7x + 10",
+    explication: "(x - 2)(x - 5) = x² - 5x - 2x + 10 = x² - 7x + 10."
   },
   {
-    question: "On lance une pièce équilibrée. Quelle est la probabilité d’obtenir pile ?",
-    options: ["1", "1/3", "1/2", "2"],
-    bonne_reponse: "1/2",
-    explication: "Il y a deux issues possibles (pile ou face) et une seule favorable."
+    question: "Développer l’expression (x + 6)(x - 2).",
+    options: ["x² + 4x - 12", "x² - 4x - 12", "x² + 8x - 12", "x² - 8x + 12"],
+    bonne_reponse: "x² + 4x - 12",
+    explication: "(x + 6)(x - 2) = x² - 2x + 6x - 12 = x² + 4x - 12."
   },
   {
-    question: "Une roue comporte 8 cases identiques numérotées de 1 à 8. Quelle est la probabilité d’obtenir un nombre supérieur à 6 ?",
-    options: ["1/8", "2/8", "6/8", "7/8"],
-    bonne_reponse: "2/8",
-    explication: "Les nombres supérieurs à 6 sont 7 et 8, soit 2 issues favorables sur 8."
+    question: "Quel est le terme constant du développement de (x - 3)(x + 5) ?",
+    options: ["15", "-15", "2", "-2"],
+    bonne_reponse: "-15",
+    explication: "Le terme constant est le produit de -3 et 5, soit -15."
   },
   {
-    question: "Dans une boîte, il y a 3 stylos noirs et 1 stylo rouge. Quelle est la probabilité de tirer un stylo noir ?",
-    options: ["1/4", "3/4", "1/3", "4/3"],
-    bonne_reponse: "3/4",
-    explication: "Il y a 3 stylos noirs sur un total de 4 stylos."
+    question: "Développer l’expression (x + 4)(x - 4).",
+    options: ["x² - 16", "x² + 16", "x² - 8x - 16", "x² + 8x - 16"],
+    bonne_reponse: "x² - 16",
+    explication: "(x + 4)(x - 4) est une identité remarquable : x² - 16."
   },
   {
-    question: "On tire au hasard une boule parmi 5 boules vertes, 3 boules jaunes et 2 boules rouges. Quelle est la probabilité de tirer une boule jaune ?",
-    options: ["3/10", "5/10", "2/10", "1/10"],
-    bonne_reponse: "3/10",
-    explication: "Il y a 3 boules jaunes sur un total de 10 boules."
+    question: "Développer l’expression (x - 1)(x + 7).",
+    options: ["x² + 6x - 7", "x² + 8x - 7", "x² - 6x - 7", "x² + 6x + 7"],
+    bonne_reponse: "x² + 6x - 7",
+    explication: "(x - 1)(x + 7) = x² + 7x - x - 7 = x² + 6x - 7."
   },
   {
-    question: "On lance un dé à 6 faces. Quelle est la probabilité d’obtenir un nombre impair ?",
-    options: ["1/6", "2/6", "3/6", "4/6"],
-    bonne_reponse: "3/6",
-    explication: "Les nombres impairs sont 1, 3 et 5, soit 3 issues favorables sur 6."
+    question: "Quel est le coefficient de x dans le développement de (x + 3)(x - 8) ?",
+    options: ["-5", "24", "-24", "11"],
+    bonne_reponse: "-5",
+    explication: "(x + 3)(x - 8) = x² - 8x + 3x - 24 = x² - 5x - 24."
   },
   {
-    question: "Dans un sac, il y a 10 jetons dont 1 seul est gagnant. Quelle est la probabilité de gagner ?",
-    options: ["1/10", "9/10", "1/9", "10/1"],
-    bonne_reponse: "1/10",
-    explication: "Un seul jeton gagnant sur 10 jetons au total."
+    question: "Développer l’expression (x - 6)(x - 2).",
+    options: ["x² - 8x + 12", "x² - 12x + 8", "x² + 8x + 12", "x² - 4x + 12"],
+    bonne_reponse: "x² - 8x + 12",
+    explication: "(x - 6)(x - 2) = x² - 2x - 6x + 12 = x² - 8x + 12."
   },
   {
-    question: "On choisit au hasard un jour de la semaine. Quelle est la probabilité de choisir un jour du week-end ?",
-    options: ["2/5", "2/7", "5/7", "1/7"],
-    bonne_reponse: "2/7",
-    explication: "Le week-end comprend 2 jours (samedi et dimanche) sur 7 jours au total."
+    question: "Quelle est la forme développée de (x + a)(x + b) ?",
+    options: ["x² + (a + b)x + ab", "x² + abx + (a + b)", "x² + ax + bx", "x² + (a - b)x + ab"],
+    bonne_reponse: "x² + (a + b)x + ab",
+    explication: "En développant : x² + bx + ax + ab = x² + (a + b)x + ab."
   }
 ];
 
